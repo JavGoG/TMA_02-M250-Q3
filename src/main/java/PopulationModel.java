@@ -23,6 +23,12 @@ public class PopulationModel {
     //(Q3)(d)
     public int newNumA(int currentA, int currentB)
     {
-        return 0;
+        int newNumA;
+        newNumA = (int) Math.floor(currentA - KILL_RATEB * currentB);
+        if (newNumA>=0){
+            return newNumA;
+        }else{
+            return 0;
+        }
     }
 }
