@@ -31,4 +31,17 @@ public class PopulationModel {
             return 0;
         }
     }
+    //(Q3) (e)
+    public int newNumB(int currentA, int currentB)
+    {
+        int newNumB;
+        newNumB = (int)Math.floor(currentB -KILL_RATEA * currentA);
+        if(newNumB>=0){
+            return newNumB;
+        }else {
+            return 0;
+        }
+    }
+
+
 }
